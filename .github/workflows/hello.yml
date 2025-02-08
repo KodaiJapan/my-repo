@@ -1,0 +1,11 @@
+# hello, worldを出力する
+# １yamlにつき１つのワークフロー
+name: Hello
+on: push 
+jobs:
+    hello: #helloがjobIDになる
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo: "Hello, World"
+            - uses: actions/checkout@v4
+    
